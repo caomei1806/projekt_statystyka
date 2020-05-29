@@ -11,9 +11,9 @@ export class DataService {
 
 	getAirportsData(): Observable<AirportData[]> {
 		return new Observable(subscriber => {
-			fetch('/assets/przykladowedane.json').then(res => res.json()).then(data => {
+			fetch('/assets/dane_wdl_portu_lotniczego.json').then(res => res.json()).then(data => {
 				subscriber.next(data);
-			})
+			});
 		});
 	}
 }

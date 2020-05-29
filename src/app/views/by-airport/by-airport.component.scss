@@ -1,0 +1,29 @@
+.byAirport {
+	width: 100%;
+
+	.chart-table-box {
+		width: 100%;
+		position: relative;
+
+		.switcher {
+			width: 100%;
+			height: 40px;
+			display: flex;
+			margin-bottom: 1rem;
+
+			button {
+				flex: 1 1;
+			}
+		}
+
+		.content {
+			width: 100%;
+			height: 700px;
+			overflow-y: auto;
+		}
+	}
+
+	> .content {
+		margin-top: 2rem;
+	}
+}

@@ -1,0 +1,30 @@
+<table class="table table-striped">
+	<thead class="thead-dark">
+		<tr>
+			<th scope="col">airport</th>
+			<th scope="col">lp2017</th>
+			<th scope="col">lp2018</th>
+			<th scope="col">lp2019</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr
+			*ngFor="let row of byAirportData; index as index"
+			[ngClass]="{'bg-secondary text-light': firstRowHighlight > 0 && index < firstRowHighlight,
+			 'bg-warning text-light': firstRowHighlight > 0 && index === 0}"
+		>
+			<td>
+				{{ row.airport }}
+			</td>
+			<td>
+				{{ row.lp2017 }}
+			</td>
+			<td>
+				{{ row.lp2018 }}
+			</td>
+			<td>
+				{{ row.lp2019 }}
+			</td>
+		</tr>
+	</tbody>
+</table>

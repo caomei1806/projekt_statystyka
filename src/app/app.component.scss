@@ -3,4 +3,7 @@
 }
 .w-86 {
 	width: 86%;
+	height: calc(100vh - 56px);
+	overflow-y: scroll;
+	padding: 1.5rem;
 }
