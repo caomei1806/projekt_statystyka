@@ -14,6 +14,9 @@ import { HomeComponent } from './views/home/home.component';
 import { ByAirportTableComponent } from './components/by-airport-table/by-airport-table.component';
 import { ByAirportSerachComponent } from './components/by-airport-serach/by-airport-serach.component';
 import { ByAirportChartComponent } from './components/by-airport-chart/by-airport-chart.component';
+import { ByCarrierTableComponent } from './components/by-carrier-table/by-carrier-table.component';
+import { ByCarrierSearchComponent } from './components/by-carrier-search/by-carrier-search.component';
+import { ByCarrierChartComponent } from './components/by-carrier-chart/by-carrier-chart.component';
 
 @NgModule({
 	declarations: [
@@ -27,7 +30,10 @@ import { ByAirportChartComponent } from './components/by-airport-chart/by-airpor
 		HomeComponent,
 		ByAirportTableComponent,
 		ByAirportSerachComponent,
-		ByAirportChartComponent
+		ByAirportChartComponent,
+		ByCarrierTableComponent,
+		ByCarrierSearchComponent,
+		ByCarrierChartComponent
 	],
 	imports: [
 		BrowserModule,

@@ -1,1 +1,52 @@
-<p>by-carrier works!</p>
+<div class="byCarrier">
+	<app-by-carrier-search
+		(onSearch)="getCarrierOnTop($event)"
+		[byCarrierData]="byCarrierData"
+	></app-by-carrier-search>
+	<div class="chart-table-box">
+		<div class="switcher">
+			<button
+				class="btn mr-3"
+				[ngClass]="{'btn-primary': activeTab === 0, 'btn-outline-primary': activeTab !== 0}"
+				(click)="changeTab(0)"
+			>Wykres</button>
+			<button
+				class="btn ml-3"
+				[ngClass]="{'btn-primary': activeTab === 1, 'btn-outline-primary': activeTab !== 1}"
+				(click)="changeTab(1)"
+			>Tabela danych</button>
+		</div>
+		<div class="content">
+			<div
+				class="chart"
+				*ngIf="activeTab === 0"
+			>
+				<app-by-carrier-chart [byCarrierData]="byCarrierData"></app-by-carrier-chart>
+			</div>
+			<div
+				class="table"
+				*ngIf="activeTab === 1"
+			>
+				<app-by-carrier-table
+					[byCarrierData]="byCarrierData"
+					[firstRowHighlight]="carrierFiltered"
+				></app-by-carrier-table>
+			</div>
+		</div>
+	</div>
+	<div class="content">
+		<h1>
+			Doloribus labore quas
+		</h1>
+		<p>
+			Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, rem. Vel rem sunt, reprehenderit magnam
+			praesentium quo doloribus labore quas perferendis est quasi veritatis asperiores aut laboriosam explicabo
+			alias cupiditate.
+		</p>
+		<p>
+			Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum distinctio rem, nemo nisi officiis magni
+			voluptatibus, quas autem illum placeat quod, accusantium dolores dolor! Minus mollitia reprehenderit quo
+			possimus autem.
+		</p>
+	</div>
+</div>

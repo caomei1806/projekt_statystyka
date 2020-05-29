@@ -50,10 +50,6 @@ export class ByAirportComponent implements OnInit {
 					this.airportFiltered = 0;
 				}
 			}
-
-
-
-
 		});
 	}
 

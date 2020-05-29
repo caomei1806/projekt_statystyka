@@ -68,7 +68,7 @@ export class ByAirportChartComponent implements OnInit {
 				data: []
 			};
 
-			this.byAirportData.forEach(airport => {
+			data.forEach(airport => {
 				labels.push(airport.airport);
 				DSlo2017.data.push(airport.lo2017);
 				DSlo2018.data.push(airport.lo2018);

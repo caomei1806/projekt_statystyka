@@ -180,19 +180,5 @@
 		"udzial_2019": "2,01%",
 		"liczba_pasazerow_2018": 817341,
 		"udzial_2018": "2,03%"
-	},
-	{
-		"przewoznik": "przewoznicy polscy*",
-		"liczba_pasazerow_2019": 12708773,
-		"udzial_2019": "29,01%",
-		"liczba_pasazerow_2018": 11120354,
-		"udzial_2018": "27,63%"
-	},
-	{
-		"przewoznik": "LCC**",
-		"liczba_pasazerow_2019": 24087695,
-		"udzial_2019": "54,99%",
-		"liczba_pasazerow_2018": 22511811,
-		"udzial_2018": "55,94%"
 	}
 ]
