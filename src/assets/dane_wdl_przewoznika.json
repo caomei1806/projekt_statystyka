@@ -1,0 +1,198 @@
+[
+	{
+		"przewoznik": "Ryanair",
+		"liczba_pasazerow_2019": 11950582,
+		"udzial_2019": "27,28%",
+		"liczba_pasazerow_2018": 11553675,
+		"udzial_2018": "28,71%"
+	},
+	{
+		"przewoznik": "LOT polish Airlines",
+		"liczba_pasazerow_2019": 11791387,
+		"udzial_2019": "26,92%",
+		"liczba_pasazerow_2018": 10500834,
+		"udzial_2018": "26,09%"
+	},
+	{
+		"przewoznik": "Wizz Air",
+		"liczba_pasazerow_2019": 9478041,
+		"udzial_2019": "21,64%",
+		"liczba_pasazerow_2018": 8718524,
+		"udzial_2018": "21,66%"
+	},
+	{
+		"przewoznik": "Lufthansa",
+		"liczba_pasazerow_2019": 2343716,
+		"udzial_2019": "5,35%",
+		"liczba_pasazerow_2018": 2257030,
+		"udzial_2018": "5,61%"
+	},
+	{
+		"przewoznik": "EasyJet",
+		"liczba_pasazerow_2019": 1043344,
+		"udzial_2019": "2,38%",
+		"liczba_pasazerow_2018": 883549,
+		"udzial_2018": "2,20%"
+	},
+	{
+		"przewoznik": "Enter Air",
+		"liczba_pasazerow_2019": 917004,
+		"udzial_2019": "2,09%",
+		"liczba_pasazerow_2018": 610282,
+		"udzial_2018": "1,52%"
+	},
+	{
+		"przewoznik": "Norwegian Air Shuttle",
+		"liczba_pasazerow_2019": 894031,
+		"udzial_2019": "2,04%",
+		"liczba_pasazerow_2018": 835486,
+		"udzial_2018": "2,08%"
+	},
+	{
+		"przewoznik": "KLM Royal Dutch Airlines",
+		"liczba_pasazerow_2019": 665284,
+		"udzial_2019": "1,52%",
+		"liczba_pasazerow_2018": 546584,
+		"udzial_2018": "1,36%"
+	},
+	{
+		"przewoznik": "SAS",
+		"liczba_pasazerow_2019": 433202,
+		"udzial_2019": "0,99%",
+		"liczba_pasazerow_2018": 417655,
+		"udzial_2018": "1,04%"
+	},
+	{
+		"przewoznik": "Air France",
+		"liczba_pasazerow_2019": 368506,
+		"udzial_2019": "0,84%",
+		"liczba_pasazerow_2018": 353522,
+		"udzial_2018": "0,88%"
+	},
+	{
+		"przewoznik": "British Airways",
+		"liczba_pasazerow_2019": 315470,
+		"udzial_2019": "0,72%",
+		"liczba_pasazerow_2018": 324386,
+		"udzial_2018": "0,81%"
+	},
+	{
+		"przewoznik": "Swiss International Air Lines",
+		"liczba_pasazerow_2019": 295467,
+		"udzial_2019": "0,67%",
+		"liczba_pasazerow_2018": 272451,
+		"udzial_2018": "0,68%"
+	},
+	{
+		"przewoznik": "Qatar Airways",
+		"liczba_pasazerow_2019": 275749,
+		"udzial_2019": "0,63%",
+		"liczba_pasazerow_2018": 222402,
+		"udzial_2018": "0,55%"
+	},
+	{
+		"przewoznik": "Finnair",
+		"liczba_pasazerow_2019": 268782,
+		"udzial_2019": "0,61%",
+		"liczba_pasazerow_2018": 228910,
+		"udzial_2018": "0,57%"
+	},
+	{
+		"przewoznik": "Ukraine International Airlines",
+		"liczba_pasazerow_2019": 250530,
+		"udzial_2019": "0,57%",
+		"liczba_pasazerow_2018": 234028,
+		"udzial_2018": "0,58%"
+	},
+	{
+		"przewoznik": "Emirates",
+		"liczba_pasazerow_2019": 235816,
+		"udzial_2019": "0,54%",
+		"liczba_pasazerow_2018": 236178,
+		"udzial_2018": "0,59%"
+	},
+	{
+		"przewoznik": "Aeroflot-Russian Airlines",
+		"liczba_pasazerow_2019": 219183,
+		"udzial_2019": "0,50%",
+		"liczba_pasazerow_2018": 203238,
+		"udzial_2018": "0,51%"
+	},
+	{
+		"przewoznik": "Austrian Airlines",
+		"liczba_pasazerow_2019": 206061,
+		"udzial_2019": "0,47%",
+		"liczba_pasazerow_2018": 199390,
+		"udzial_2018": "0,50%"
+	},
+	{
+		"przewoznik": "Brussels Airlines",
+		"liczba_pasazerow_2019": 174896,
+		"udzial_2019": "0,40%",
+		"liczba_pasazerow_2018": 178707,
+		"udzial_2018": "0,44%"
+	},
+	{
+		"przewoznik": "Jet2.com",
+		"liczba_pasazerow_2019": 169520,
+		"udzial_2019": "0,39%",
+		"liczba_pasazerow_2018": 99429,
+		"udzial_2018": "0,25%"
+	},
+	{
+		"przewoznik": "Eurowings (Germanwings)",
+		"liczba_pasazerow_2019": 159915,
+		"udzial_2019": "0,37%",
+		"liczba_pasazerow_2018": 147745,
+		"udzial_2018": "0,37%"
+	},
+	{
+		"przewoznik": "EL AL Israel Airlines",
+		"liczba_pasazerow_2019": 123627,
+		"udzial_2019": "0,28%",
+		"liczba_pasazerow_2018": 138158,
+		"udzial_2018": "0,34%"
+	},
+	{
+		"przewoznik": "TAp portugal",
+		"liczba_pasazerow_2019": 119719,
+		"udzial_2019": "0,27%",
+		"liczba_pasazerow_2018": 104060,
+		"udzial_2018": "0,26%"
+	},
+	{
+		"przewoznik": "Transavia Airlines",
+		"liczba_pasazerow_2019": 113642,
+		"udzial_2019": "0,26%",
+		"liczba_pasazerow_2018": 52059,
+		"udzial_2018": "0,13%"
+	},
+	{
+		"przewoznik": "Aegean Airlines",
+		"liczba_pasazerow_2019": 110805,
+		"udzial_2019": "0,25%",
+		"liczba_pasazerow_2018": 109178,
+		"udzial_2018": "0,27%"
+	},
+	{
+		"przewoznik": "pozostali przewoznicy",
+		"liczba_pasazerow_2019": 882073,
+		"udzial_2019": "2,01%",
+		"liczba_pasazerow_2018": 817341,
+		"udzial_2018": "2,03%"
+	},
+	{
+		"przewoznik": "przewoznicy polscy*",
+		"liczba_pasazerow_2019": 12708773,
+		"udzial_2019": "29,01%",
+		"liczba_pasazerow_2018": 11120354,
+		"udzial_2018": "27,63%"
+	},
+	{
+		"przewoznik": "LCC**",
+		"liczba_pasazerow_2019": 24087695,
+		"udzial_2019": "54,99%",
+		"liczba_pasazerow_2018": 22511811,
+		"udzial_2018": "55,94%"
+	}
+]

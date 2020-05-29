@@ -1,1 +1,6 @@
-/* You can add global styles to this file, and also import other style files */
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+$primary: #035aa6;
+$secondary: #40bad5;
+$dark: #120136;
+$warning: #fcbf1e;
