@@ -12,6 +12,7 @@ export class ByAirportComponent implements OnInit {
 	byAirportData: AirportData[];
 	activeTab: number;
 	airportFiltered: number;
+	airportOnTop: AirportData;
 
 	constructor(
 		private dataService: DataService
@@ -29,6 +30,7 @@ export class ByAirportComponent implements OnInit {
 
 	async getAirportOnTop(airportName: string): Promise<void> {
 
+
 		this.dataService.getAirportsData().subscribe(data => {
 			if (airportName != '') {
 				this.byAirportData = data;
@@ -40,7 +42,9 @@ export class ByAirportComponent implements OnInit {
 					tableWithoutThisAirport.unshift(tableWithThisAirport[0]);
 					this.byAirportData = tableWithoutThisAirport;
 					this.airportFiltered = 1;
+					this.airportOnTop = tableWithThisAirport[0];
 				} else if (tableWithThisAirport.length > 1) {
+					this.airportOnTop = tableWithThisAirport[0];
 					tableWithThisAirport.forEach(el => {
 						tableWithoutThisAirport.unshift(el);
 					});

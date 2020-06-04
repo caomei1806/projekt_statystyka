@@ -12,6 +12,7 @@ export class ByCarrierComponent implements OnInit {
 	byCarrierData: CarrierData[];
 	activeTab: number;
 	carrierFiltered: number;
+	carrierOnTop: string;
 
 	constructor(
 		private dataService: DataService
@@ -28,6 +29,8 @@ export class ByCarrierComponent implements OnInit {
 	}
 
 	async getCarrierOnTop(carrierName: string): Promise<void> {
+
+		this.carrierOnTop = carrierName;
 
 		this.dataService.getCarrierData().subscribe(data => {
 			if (carrierName != '') {

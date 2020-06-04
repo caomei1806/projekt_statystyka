@@ -18,8 +18,19 @@
 
 		.content {
 			width: 100%;
-			height: 700px;
+			height: 400px;
 			overflow-y: auto;
+
+			.chart {
+				display: flex;
+
+				.chart-chart {
+					width: 70%;
+				}
+				.right {
+					width: 30%;
+				}
+			}
 		}
 	}
 

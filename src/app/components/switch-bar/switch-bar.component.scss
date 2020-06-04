@@ -4,9 +4,8 @@
 	flex-direction: column;
 	justify-content: center;
 	#airport,
-	#carrier,
-	#destination {
-		height: 33.3%;
+	#carrier {
+		height: 50%;
 		width: 100%;
 	}
 	#airport {
@@ -17,12 +16,7 @@
 	#carrier {
 		background: url("../../../assets/img/carrier.jpg");
 		background-size: cover;
-		background-position: right;
-	}
-	#destination {
-		background: url("../../../assets/img/destination.jpg");
-		background-size: cover;
-		background-position: right;
+		background-position: left;
 	}
 	a {
 		&.active {

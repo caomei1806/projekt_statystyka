@@ -21,7 +21,28 @@
 				class="chart"
 				*ngIf="activeTab === 0"
 			>
-				<app-by-airport-chart [byAirportData]="byAirportData"></app-by-airport-chart>
+				<app-by-airport-chart
+					[byAirportData]="byAirportData"
+					class="chart-chart"
+				></app-by-airport-chart>
+				<div
+					class="right card m-3"
+					*ngIf="airportOnTop"
+				>
+					<div class="card-header">
+						<h4 class="text-center mb-0">
+							{{ airportOnTop.airport }}
+						</h4>
+					</div>
+					<div class="card-body">
+						<p class="mb-1">
+							Wzrost 2018/2019 - {{ airportOnTop.dlo20192018 }}
+						</p>
+						<p>
+							Wzrost 2017/2019 - {{ airportOnTop.dlo20192017 }}
+						</p>
+					</div>
+				</div>
 			</div>
 			<div
 				class="table"
@@ -35,18 +56,80 @@
 		</div>
 	</div>
 	<div class="content">
-		<h1>
-			Doloribus labore quas
-		</h1>
+		<h2>
+			Podsumowanie statystyczne - według portu lotniczego
+		</h2>
+		<hr>
 		<p>
-			Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, rem. Vel rem sunt, reprehenderit magnam
-			praesentium quo doloribus labore quas perferendis est quasi veritatis asperiores aut laboriosam explicabo
-			alias cupiditate.
+			Przez lata 2017 - 2019 polskie porty lotnicze obsłużyły <strong>134 635 306</strong> pasażerów.
 		</p>
 		<p>
-			Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum distinctio rem, nemo nisi officiis magni
-			voluptatibus, quas autem illum placeat quod, accusantium dolores dolor! Minus mollitia reprehenderit quo
-			possimus autem.
+			Średnio przez jedno polskie lotnisko w latach 2017 - 2019 odprawe odbywało <strong>3 205 603</strong>
+			pasażerów.
+		</p>
+		<p>
+			W porcie lotniczym <strong>Szczecin – Goleniów</strong> zmiany w ilości pasażerów są najmniejsze w 2017
+			roku. Mówi nam o tym wariancja tylko na poziomie <strong>30,8</strong>.<br>
+			A w <strong>Kraków – Balice</strong> zmiany w ilości pasażerów były największe ilościowo o czym świadczy
+			wynik wariancji w roku 2017 - <strong>64994,6</strong>.
+		</p>
+		<p>
+			Port lotniczy <strong>Chopina w Warszawie</strong> w roku 2018 miał średnio <strong>17 437 384 +/- 41,4 tys.
+			</strong> pasażerskich odpraw lotniczych.
+		</p>
+		<p>
+			W Zielonej Górze współczynnik zmienności 2017 wyniósł <strong>0.11%</strong> - oznacza to że ich ilośc
+			pasażerów <strong>nie zmienia się szcególnie</strong> przez następne lata i jest podobna to 2017 roku.
+		</p>
+		<p>
+			Rozstęp na lotnisku w Krakowie wyniósł aż <strong>2 573 669</strong> pasażerów a to oznacza w tym przypadku
+			duży przyrost ilości pasażerów.
+		</p>
+		<h2 class="mt-5">
+			Szereg rozdzielczy przedziałowy - według portu lotniczego
+		</h2>
+		<hr>
+		<p>
+			Współczynnik asymetrii wynosi <strong>0,46</strong> co oznacza <strong>asymetrię prawostronną</strong>.
+		</p>
+		<p>
+			Na większości lotnisk w Polsce ilość pasażerów w roku 2017 <strong>wynosiła mniej niż średnia</strong>.
+		</p>
+		<p>
+			Odchylenie standardowe wyniosło <strong>25 315,31</strong> co oznacza, że w roku 2017 liczba pasażerów
+			różniła się od średniej
+			arytmetycznej o <strong>+/- 25 315,31</strong>.
+		</p>
+		<h4>Kwantyle</h4>
+		<p class="mb-1">
+			Q1 - <strong>2708,33</strong>.<br> <strong>25%</strong> portów lotniczych miało ilość pasażerów mniejsza lub
+			równą
+			<strong>2708,33</strong>.
+		</p>
+		<p class="mb-1">
+			Q2 - <strong>5000,07</strong>.<br> <strong>50%</strong> portów lotniczych miało ilość pasażerów mniejsza lub
+			równą
+			<strong>5000,07</strong>.
+		</p>
+		<p>
+			Q3 - <strong>20000,07</strong>.<br> <strong>75%</strong> portów lotniczych miało ilość pasażerów mniejsza
+			lub równą
+			<strong>20000,07</strong>.
+		</p>
+		<h2 class="mt-5">
+			Korelacja - ilość pasażerów a średnie zarobki w 2017
+		</h2>
+		<hr>
+		<p>
+			Kowariancja wynosi <strong>0,035173025</strong> (brak / bardzo bardzo mały związek)
+		</p>
+		<p>
+			W wyniku obliczeń kowariancji pomiędzy danymi ilości pasażerów na polskich lotniskach w roku 2017 a danymi o
+			średnich zarobkach na rok 2017 w danym mieście możemy
+			stwierdzić, że nie ma to żadnego związku ze sobą.
+		</p>
+		<p>
+			lotniska z największą ilościom obsłużonych pasażerów nie mają największej średniej stawki zarobkowej.
 		</p>
 	</div>
 </div>

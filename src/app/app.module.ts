@@ -9,7 +9,6 @@ import { SwitchBarComponent } from './components/switch-bar/switch-bar.component
 import { AirportDataAnalysisComponent } from './components/airport-data-analysis/airport-data-analysis.component';
 import { ByAirportComponent } from './views/by-airport/by-airport.component';
 import { ByCarrierComponent } from './views/by-carrier/by-carrier.component';
-import { ByDestinationComponent } from './views/by-destination/by-destination.component';
 import { HomeComponent } from './views/home/home.component';
 import { ByAirportTableComponent } from './components/by-airport-table/by-airport-table.component';
 import { ByAirportSerachComponent } from './components/by-airport-serach/by-airport-serach.component';
@@ -26,7 +25,6 @@ import { ByCarrierChartComponent } from './components/by-carrier-chart/by-carrie
 		AirportDataAnalysisComponent,
 		ByAirportComponent,
 		ByCarrierComponent,
-		ByDestinationComponent,
 		HomeComponent,
 		ByAirportTableComponent,
 		ByAirportSerachComponent,

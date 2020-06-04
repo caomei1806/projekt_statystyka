@@ -44,27 +44,27 @@ export class ByAirportChartComponent implements OnInit {
 			let labels = [];
 
 			let DSlo2017 = {
-				label: 'Liczba odlotów - 2017',
+				label: 'Liczba pasażerów 2017',
 				data: []
 			};
 			let DSlo2018 = {
-				label: 'lo2017',
+				label: 'Liczba pasażerów 2018',
 				data: []
 			};
 			let DSlo2019 = {
-				label: 'lo2017',
+				label: 'Liczba pasażerów 2019',
 				data: []
 			};
 			let DSlp2017 = {
-				label: 'lo2017',
+				label: 'Liczba operacji pax 2017',
 				data: []
 			};
 			let DSlp2018 = {
-				label: 'lo2017',
+				label: 'Liczba operacji pax 2018',
 				data: []
 			};
 			let DSlp2019 = {
-				label: 'lo2017',
+				label: 'Liczba operacji pax 2019',
 				data: []
 			};
 

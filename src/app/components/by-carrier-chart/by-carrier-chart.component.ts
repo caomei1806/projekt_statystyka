@@ -44,12 +44,12 @@ export class ByCarrierChartComponent implements OnInit {
 			let labels = [];
 
 			let liczba_pasazerow_2018 = {
-				label: 'liczba_pasazerow_2018',
+				label: 'Liczba Pasażerow 2018',
 				data: []
 			};
 
 			let liczba_pasazerow_2019 = {
-				label: 'liczba_pasazerow_2019',
+				label: 'Liczba Pasażerow 2019',
 				data: []
 			};
 

@@ -21,7 +21,18 @@
 				class="chart"
 				*ngIf="activeTab === 0"
 			>
-				<app-by-carrier-chart [byCarrierData]="byCarrierData"></app-by-carrier-chart>
+				<app-by-carrier-chart
+					[byCarrierData]="byCarrierData"
+					class="chart-chart"
+				></app-by-carrier-chart>
+				<div
+					class="right p-2"
+					*ngIf="carrierOnTop"
+				>
+					<h4 class="text-center">
+						{{ carrierOnTop }}
+					</h4>
+				</div>
 			</div>
 			<div
 				class="table"
@@ -35,18 +46,35 @@
 		</div>
 	</div>
 	<div class="content">
-		<h1>
-			Doloribus labore quas
-		</h1>
+		<h2>
+			Podsumowanie statystyczne - według przewoźnika
+		</h2>
+		<hr>
 		<p>
-			Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, rem. Vel rem sunt, reprehenderit magnam
-			praesentium quo doloribus labore quas perferendis est quasi veritatis asperiores aut laboriosam explicabo
-			alias cupiditate.
+			Przez lata 2018 - 2019 wszyscy przewoźnicy obsłużyli razem <strong>82 351 739</strong> operacji pax na
+			terenie Polski.
 		</p>
 		<p>
-			Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum distinctio rem, nemo nisi officiis magni
-			voluptatibus, quas autem illum placeat quod, accusantium dolores dolor! Minus mollitia reprehenderit quo
-			possimus autem.
+			Średnio w Polsce na przewoźnika przypada <strong>1 647 035</strong> obsłużonych operacji pax.
+		</p>
+		<p>
+			Przewoźnik Aegean Airlines posiada wariancje za rok 2018 o wartości
+			<strong>3,008</strong> - oznacza to, że jego ilości operacji pax przez te dwa lata są do siebie
+			bardzo podobne.
+		</p>
+		<p>
+			Ryanair w roku 2018 miał średnio <strong>11 752 129 +/- 40,9 tys.
+			</strong> operacji pax.
+		</p>
+		<p>
+			Dla przewoźnika Lufthansa współczynnik zmienności 2017 wyniósł <strong>0,001%</strong> - oznacza to że
+			ich ilośc
+			pasażerów <strong>w ogóle się nie zmieniła</strong> przez następne lata i jest najpewniej identyczna jak w
+			2017 roku.
+		</p>
+		<p>
+			Rozstęp dla LOT Polish Airlines wyniósł aż <strong>1 290 553</strong> operacji a to oznacza w tym przypadku
+			duży przyrost.
 		</p>
 	</div>
 </div>
