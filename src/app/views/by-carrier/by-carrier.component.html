@@ -1,0 +1,111 @@
+<div class="byCarrier">
+	<app-by-carrier-search
+		(onSearch)="getCarrierOnTop($event)"
+		[byCarrierData]="byCarrierData"
+	></app-by-carrier-search>
+	<div class="chart-table-box">
+		<div class="switcher">
+			<button
+				class="btn mr-3"
+				[ngClass]="{'btn-secondary': activeTab === 0, 'btn-outline-secondary': activeTab !== 0}"
+				(click)="changeTab(0)"
+			>Wykres</button>
+			<button
+				class="btn ml-3"
+				[ngClass]="{'btn-secondary': activeTab === 1, 'btn-outline-secondary': activeTab !== 1}"
+				(click)="changeTab(1)"
+			>Tabela danych</button>
+		</div>
+		<div class="content">
+			<div
+				class="chart"
+				*ngIf="activeTab === 0"
+			>
+				<app-by-carrier-chart
+					[byCarrierData]="byCarrierData"
+					class="chart-chart"
+				></app-by-carrier-chart>
+				<div
+					class="right card m-3"
+					*ngIf="carrierOnTop"
+				>
+					<div class="card-header">
+						<h5 class="text-center mb-0">
+							{{ carrierOnTop.przewoznik }}
+						</h5>
+					</div>
+					<div class="card-body">
+						<p class="mb-1 text-secondary small"> Procentowy wzrost liczby pasażerów</p>
+						<p class="mb-1">
+							Wzrost liczby pasażerów 2018/2019 -
+							<strong
+								class="text-info">{{(carrierOnTop.liczba_pasazerow_2018 / carrierOnTop.liczba_pasazerow_2019).toFixed(2)}}
+								%</strong>
+						</p>
+						<p>
+							Udział na rynku lotniczym 2018 - <strong
+								class="text-info">{{ carrierOnTop.udzial_2018}}</strong>
+						</p>
+						<p class="mb-1 mt-3 text-secondary small"> Procentowy wzrost operacji pax</p>
+						<p class="mb-1">
+							Udział na rynku lotniczym 2019 - <strong
+								class="text-info">{{ carrierOnTop.udzial_2019 }}</strong>
+						</p>
+
+					</div>
+				</div>
+
+			</div>
+			<div
+				class="table"
+				*ngIf="activeTab === 1"
+			>
+				<app-by-carrier-table
+					[byCarrierData]="byCarrierData"
+					[firstRowHighlight]="carrierFiltered"
+				></app-by-carrier-table>
+			</div>
+		</div>
+	</div>
+	<div class="content">
+		<h3>
+			Podsumowanie statystyczne - według przewoźnika
+		</h3>
+		<hr>
+		<p>
+			Przez lata 2018 - 2019 wszyscy przewoźnicy obsłużyli razem <strong class="text-secondary">82 351
+				739</strong> operacji pax na
+			terenie Polski.
+		</p>
+		<p>
+			Średnio w Polsce na przewoźnika przypada <strong>1 647 035</strong> obsłużonych operacji pax.
+		</p>
+		<p class="w-75">
+			Przewoźnik Aegean Airlines posiada wariancje za rok 2018 o wartości
+			<strong>3,008</strong> - oznacza to, że jego ilości operacji pax przez te dwa lata są do siebie
+			bardzo podobne.
+		</p>
+		<p>
+			Ryanair w roku 2018 miał średnio <strong>11 752 129 +/- 40,9 tys.
+			</strong> operacji pax.
+		</p>
+		<p class="w-75">
+			Dla przewoźnika Lufthansa współczynnik zmienności 2017 wyniósł <strong>0,001%</strong> - oznacza to że
+			ich ilośc
+			pasażerów <strong>w ogóle się nie zmieniła</strong> przez następne lata i jest najpewniej identyczna jak w
+			2017 roku.
+		</p>
+		<p>
+			Rozstęp dla LOT Polish Airlines wyniósł aż <strong class="text-secondary"> 1 290 553</strong> operacji a to
+			oznacza w tym przypadku
+			duży przyrost.
+		</p>
+	</div>
+	<hr>
+	<p>
+		przygotowała <strong>Karolina Grochal</strong><br>
+		nr albumu <strong>12253</strong><br>
+		grupa <strong>cw3/1/IES</strong>
+	</p>
+	<a href="../../../assets/projekt-KarolinaGrochal.xlsx">Pobierz plik XLSX z obliczeniami</a>
+</div>

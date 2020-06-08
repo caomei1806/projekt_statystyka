@@ -1,0 +1,26 @@
+<table class="table table-striped table-sm">
+	<thead class="thead-dark">
+		<tr>
+			<th scope="col">Przewoźnik</th>
+			<th scope="col">Liczba Pasażerów 2018</th>
+			<th scope="col">Liczba Pasażerów 2019</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr
+			*ngFor="let row of byCarrierData; index as index"
+			[ngClass]="{'bg-light text-dark': firstRowHighlight > 0 && index < firstRowHighlight && index !== 0,
+			 'bg-secondary text-light': firstRowHighlight > 0 && index === 0}"
+		>
+			<td>
+				{{ row.przewoznik }}
+			</td>
+			<td>
+				{{ row.liczba_pasazerow_2018 }}
+			</td>
+			<td>
+				{{ row.liczba_pasazerow_2019 }}
+			</td>
+		</tr>
+	</tbody>
+</table>

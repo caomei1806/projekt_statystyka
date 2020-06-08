@@ -1,0 +1,27 @@
+<div class="searchbar">
+	<div class="d-flex">
+		<div class="form-group w-100">
+			<input
+				type="text"
+				class="form-control"
+				placeholder="Wpisz nazwe lotniska"
+				(keyup)="changeTooltip()"
+				[(ngModel)]="searchedAirport"
+			>
+			<div class="search-tooltip">
+				<p
+					*ngFor="let name of tooltipNames"
+					(click)="changeName(name)"
+				>
+					{{name}}
+				</p>
+			</div>
+		</div>
+		<div>
+			<button
+				class="btn btn-secondary ml-4"
+				(click)="search()"
+			>Wyszukaj</button>
+		</div>
+	</div>
+</div>
