@@ -12,7 +12,7 @@ export class ByCarrierComponent implements OnInit {
 	byCarrierData: CarrierData[];
 	activeTab: number;
 	carrierFiltered: number;
-	carrierOnTop: string;
+	carrierOnTop: CarrierData;
 
 	constructor(
 		private dataService: DataService
@@ -30,8 +30,6 @@ export class ByCarrierComponent implements OnInit {
 
 	async getCarrierOnTop(carrierName: string): Promise<void> {
 
-		this.carrierOnTop = carrierName;
-
 		this.dataService.getCarrierData().subscribe(data => {
 			if (carrierName != '') {
 				this.byCarrierData = data;
@@ -42,11 +40,13 @@ export class ByCarrierComponent implements OnInit {
 				if (tableWithThisCarrier.length === 1) {
 					tableWithoutThisCarrier.unshift(tableWithThisCarrier[0]);
 					this.byCarrierData = tableWithoutThisCarrier;
+					this.carrierOnTop = tableWithThisCarrier[0];
 					this.carrierFiltered = 1;
 				} else if (tableWithThisCarrier.length > 1) {
 					tableWithThisCarrier.forEach(el => {
 						tableWithoutThisCarrier.unshift(el);
 					});
+					this.carrierOnTop = tableWithThisCarrier[tableWithThisCarrier.length - 1];
 					this.carrierFiltered = tableWithThisCarrier.length;
 					this.byCarrierData = tableWithoutThisCarrier;
 				} else {

@@ -1,6 +1,17 @@
-@import "../node_modules/bootstrap/scss/bootstrap.scss";
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
-$primary: #035aa6;
-$secondary: #40bad5;
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@300&display=swap");
+$primary: rgb(155, 179, 179);
+$secondary: rgb(42, 179, 179);
 $dark: #120136;
 $warning: #fcbf1e;
+$info: rgb(218, 141, 0);
+$light: rgb(231, 231, 231);
+
+.form-control {
+	&:active,
+	&:focus {
+		box-shadow: unset !important;
+	}
+}
+
+@import "../node_modules/bootstrap/scss/bootstrap.scss";

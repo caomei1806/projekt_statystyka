@@ -7,12 +7,12 @@
 		<div class="switcher">
 			<button
 				class="btn mr-3"
-				[ngClass]="{'btn-primary': activeTab === 0, 'btn-outline-primary': activeTab !== 0}"
+				[ngClass]="{'btn-secondary': activeTab === 0, 'btn-outline-secondary': activeTab !== 0}"
 				(click)="changeTab(0)"
 			>Wykres</button>
 			<button
 				class="btn ml-3"
-				[ngClass]="{'btn-primary': activeTab === 1, 'btn-outline-primary': activeTab !== 1}"
+				[ngClass]="{'btn-secondary': activeTab === 1, 'btn-outline-secondary': activeTab !== 1}"
 				(click)="changeTab(1)"
 			>Tabela danych</button>
 		</div>
@@ -30,17 +30,26 @@
 					*ngIf="airportOnTop"
 				>
 					<div class="card-header">
-						<h4 class="text-center mb-0">
+						<h5 class="text-center mb-0">
 							{{ airportOnTop.airport }}
-						</h4>
+						</h5>
 					</div>
 					<div class="card-body">
+						<p class="mb-1 text-secondary small"> Procentowy wzrost liczby pasażerów</p>
+						<p class="mb-1">
+							Wzrost 2018/2019 - {{ airportOnTop.dlp20192018 }}
+						</p>
+						<p>
+							Wzrost 2017/2019 - {{ airportOnTop.dlp20192017 }}
+						</p>
+						<p class="mb-1 mt-3 text-secondary small"> Procentowy wzrost operacji pax</p>
 						<p class="mb-1">
 							Wzrost 2018/2019 - {{ airportOnTop.dlo20192018 }}
 						</p>
 						<p>
 							Wzrost 2017/2019 - {{ airportOnTop.dlo20192017 }}
 						</p>
+
 					</div>
 				</div>
 			</div>
@@ -56,18 +65,19 @@
 		</div>
 	</div>
 	<div class="content">
-		<h2>
+		<h3>
 			Podsumowanie statystyczne - według portu lotniczego
-		</h2>
+		</h3>
 		<hr>
 		<p>
-			Przez lata 2017 - 2019 polskie porty lotnicze obsłużyły <strong>134 635 306</strong> pasażerów.
+			Przez lata 2017 - 2019 polskie porty lotnicze obsłużyły <strong class="text-secondary">134 635 306</strong>
+			pasażerów.
 		</p>
 		<p>
 			Średnio przez jedno polskie lotnisko w latach 2017 - 2019 odprawe odbywało <strong>3 205 603</strong>
 			pasażerów.
 		</p>
-		<p>
+		<p class="w-75">
 			W porcie lotniczym <strong>Szczecin – Goleniów</strong> zmiany w ilości pasażerów są najmniejsze w 2017
 			roku. Mówi nam o tym wariancja tylko na poziomie <strong>30,8</strong>.<br>
 			A w <strong>Kraków – Balice</strong> zmiany w ilości pasażerów były największe ilościowo o czym świadczy
@@ -77,53 +87,62 @@
 			Port lotniczy <strong>Chopina w Warszawie</strong> w roku 2018 miał średnio <strong>17 437 384 +/- 41,4 tys.
 			</strong> pasażerskich odpraw lotniczych.
 		</p>
-		<p>
+		<p class="w-75">
 			W Zielonej Górze współczynnik zmienności 2017 wyniósł <strong>0.11%</strong> - oznacza to że ich ilośc
-			pasażerów <strong>nie zmienia się szcególnie</strong> przez następne lata i jest podobna to 2017 roku.
+			pasażerów <strong>nie zmienia się szczególnie</strong> przez następne lata i jest podobna to 2017 roku.
 		</p>
 		<p>
 			Rozstęp na lotnisku w Krakowie wyniósł aż <strong>2 573 669</strong> pasażerów a to oznacza w tym przypadku
 			duży przyrost ilości pasażerów.
 		</p>
-		<h2 class="mt-5">
+		<h3 class="mt-5">
 			Szereg rozdzielczy przedziałowy - według portu lotniczego
-		</h2>
+		</h3>
 		<hr>
 		<p>
-			Współczynnik asymetrii wynosi <strong>0,46</strong> co oznacza <strong>asymetrię prawostronną</strong>.
+			Współczynnik asymetrii wynosi <strong class="text-secondary">0,46</strong> co oznacza <strong
+				class="text-secondary"
+			>asymetrię prawostronną</strong>.
 		</p>
 		<p>
 			Na większości lotnisk w Polsce ilość pasażerów w roku 2017 <strong>wynosiła mniej niż średnia</strong>.
 		</p>
 		<p>
-			Odchylenie standardowe wyniosło <strong>25 315,31</strong> co oznacza, że w roku 2017 liczba pasażerów
+			Odchylenie standardowe wyniosło <strong class="text-secondary">25 315,31</strong> co oznacza, że w roku 2017
+			liczba pasażerów
 			różniła się od średniej
 			arytmetycznej o <strong>+/- 25 315,31</strong>.
 		</p>
-		<h4>Kwantyle</h4>
+		<h4 class="mt-4 mb-2"> Kwantyle</h4>
 		<p class="mb-1">
-			Q1 - <strong>2708,33</strong>.<br> <strong>25%</strong> portów lotniczych miało ilość pasażerów mniejsza lub
+			<span class="text-secondary">Q1</span> - <strong>2708,33</strong>.<br> <strong>25%</strong> portów
+			lotniczych miało ilość pasażerów
+			mniejsza lub
 			równą
 			<strong>2708,33</strong>.
 		</p>
 		<p class="mb-1">
-			Q2 - <strong>5000,07</strong>.<br> <strong>50%</strong> portów lotniczych miało ilość pasażerów mniejsza lub
+			<span class="text-secondary">Q2</span> - <strong>5000,07</strong>.<br> <strong>50%</strong> portów
+			lotniczych miało ilość pasażerów
+			mniejsza lub
 			równą
 			<strong>5000,07</strong>.
 		</p>
 		<p>
-			Q3 - <strong>20000,07</strong>.<br> <strong>75%</strong> portów lotniczych miało ilość pasażerów mniejsza
+			<span class="text-secondary">Q3</span> - <strong>20000,07</strong>.<br> <strong>75%</strong> portów
+			lotniczych miało ilość
+			pasażerów mniejsza
 			lub równą
 			<strong>20000,07</strong>.
 		</p>
-		<h2 class="mt-5">
+		<h3 class="mt-5">
 			Korelacja - ilość pasażerów a średnie zarobki w 2017
-		</h2>
+		</h3>
 		<hr>
 		<p>
-			Kowariancja wynosi <strong>0,035173025</strong> (brak / bardzo bardzo mały związek)
+			Kowariancja wynosi <strong class="text-secondary">0,035173025</strong> (brak / bardzo bardzo mały związek)
 		</p>
-		<p>
+		<p class="w-75">
 			W wyniku obliczeń kowariancji pomiędzy danymi ilości pasażerów na polskich lotniskach w roku 2017 a danymi o
 			średnich zarobkach na rok 2017 w danym mieście możemy
 			stwierdzić, że nie ma to żadnego związku ze sobą.

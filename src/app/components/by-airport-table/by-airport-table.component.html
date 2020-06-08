@@ -13,8 +13,8 @@
 	<tbody>
 		<tr
 			*ngFor="let row of byAirportData; index as index"
-			[ngClass]="{'bg-secondary text-light': firstRowHighlight > 0 && index < firstRowHighlight,
-			 'bg-warning text-light': firstRowHighlight > 0 && index === 0}"
+			[ngClass]="{'bg-light text-dark': firstRowHighlight > 0 && index < firstRowHighlight && index !== 0,
+			 'bg-secondary text-white': firstRowHighlight > 0 && index === 0}"
 		>
 			<td>
 				{{ row.airport }}
